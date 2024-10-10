@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>Healify</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-blue-500 to-purple-500 text-white">
+    <div class="flex flex-col items-center p-4">
+        <div class="flex justify-between w-full">
+            <div></div>
+            <div class="text-xl font-bold">HEALIFY</div>
+        </div>
+        <div class="flex items-center mt-4">
+            <div class="relative">
+                <img alt="User avatar" class="rounded-full w-16 h-16" height="100" src="https://storage.googleapis.com/a1aa/image/7sr7dxybXDa1Hl1rf7Rfpj4pFpfOzzhH0dZnEA39Aa7THOKnA.jpg" width="100"/>
+                <div class="absolute top-0 left-0 w-16 h-16 bg-blue-500 opacity-50 rounded-full"></div>
+            </div>
+            <div class="ml-4">
+                <div class="text-lg font-bold">Welcome</div>
+                <div>User XX</div>
+            </div>
+        </div>
+        <div class="mt-4 w-full flex justify-center">
+            <div class="relative w-3/4">
+                <input class="w-full p-2 rounded-full text-black" placeholder="Search" type="text"/>
+                <i class="fas fa-search absolute right-4 top-3 text-gray-500"></i>
+            </div>
+        </div>
+        <div class="bg-white text-black rounded-t-3xl mt-6 w-full p-6">
+            <div class="flex justify-between items-center">
+                <div class="text-lg font-bold">Categories</div>
+                <div class="text-blue-500">Show All</div>
+            </div>
+            <div class="grid grid-cols-3 gap-4 mt-4">
+                <a href="consultation.html" class="flex flex-col items-center bg-white rounded-lg p-2 shadow-md hover:bg-gray-200 transition duration-300">
+                    <i class="fas fa-user-md text-3xl text-blue-500"></i>
+                    <div class="mt-2">Consultation</div>
+                </a>
+                <a href="dentist.html" class="flex flex-col items-center bg-white rounded-lg p-2 shadow-md hover:bg-gray-200 transition duration-300">
+                    <i class="fas fa-tooth text-3xl text-blue-500"></i>
+                    <div class="mt-2">Dentist</div>
+                </a>
+                <a href="help.html" class="flex flex-col items-center bg-white rounded-lg p-2 shadow-md hover:bg-gray-200 transition duration-300">
+                    <i class="fas fa-hands-helping text-3xl text-blue-500"></i>
+                    <div class="mt-2">Help &amp; Contribute</div>
+                </a>
+                <a href="hospital.html" class="flex flex-col items-center bg-white rounded-lg p-2 shadow-md hover:bg-gray-200 transition duration-300">
+                    <i class="fas fa-hospital text-3xl text-blue-500"></i>
+                    <div class="mt-2">Hospital</div>
+                </a>
+                <a href="don.html" class="flex flex-col items-center bg-white rounded-lg p-2 shadow-md hover:bg-gray-200 transition duration-300">
+                    <i class="fas fa-hand-holding-heart text-3xl text-blue-500"></i>
+                    <div class="mt-2">Find/Be Donor</div>
+                </a>
+                <a href="lab.html" class="flex flex-col items-center bg-white rounded-lg p-2 shadow-md hover:bg-gray-200 transition duration-300">
+                    <i class="fas fa-vials text-3xl text-blue-500"></i>
+                    <div class="mt-2">Laboratory & reports</div>
+                </a>
+            </div>
+            <div class="mt-6">
+                <div class="text-lg font-bold">Top doctors</div>
+                <div class="mt-4">
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg mb-4">
+                        <img alt="Doctor Olivia Wilson" class="rounded-full w-12 h-12" height="50" src="https://storage.googleapis.com/a1aa/image/noBFpfnXDKwlZaYfGUQNWvMf8cl6eSEwxx510tiavQgzOcUOB.jpg" width="50"/>
+                        <div class="ml-4">
+                            <div class="font-bold">dr. Olivia Wilson</div>
+                            <div class="text-sm text-gray-600">Consultant - Physiotherapy</div>
+                            <div class="text-sm text-yellow-500"><i class="fas fa-star"></i> 4.9 (57 Reviews)</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg">
+                        <img alt="Doctor Jonathan Patterson" class="rounded-full w-12 h-12" height="50" src="https://storage.googleapis.com/a1aa/image/kXIJu5pLYw6OPx7JFThRvUJgYPk1ije269olwDvdytv1hjyJA.jpg" width="50"/>
+                        <div class="ml-4">
+                            <div class="font-bold">dr. Jonathan Patterson</div>
+                            <div class="text-sm text-gray-600">Consultant - Internal Medicine</div>
+                            <div class="text-sm text-yellow-500"><i class="fas fa-star"></i> 4.9 (57 Reviews)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed bottom-0 w-full bg-blue-600 p-4 flex justify-around text-white">
+            <a href="1.html" class="flex flex-col items-center">
+                <i class="fas fa-home text-xl"></i>
+                <div class="text-xs">Home</div>
+            </a>
+            <a href="doc.html" class="flex flex-col items-center">
+                <i class="fas fa-user-md text-xl"></i>
+                <div class="text-xs">Doctors</div>
+            </a>
+            <a href="appointment.html" class="flex flex-col items-center">
+                <i class="fas fa-calendar-alt text-xl"></i>
+                <div class="text-xs">Appointment</div>
+            </a>
+            <a href="shop.html" class="flex flex-col items-center">
+                <i class="fas fa-shopping-cart text-xl"></i>
+                <div class="text-xs">Shop</div>
+            </a>
+            <a href="profile.html" class="flex flex-col items-center">
+                <i class="fas fa-user text-xl"></i>
+                <div class="text-xs">Profile</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
