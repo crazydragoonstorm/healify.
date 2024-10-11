@@ -8,6 +8,16 @@
             font-family: 'Roboto', sans-serif;
         }
     </style>
+    <script>
+        function sendWatchInfo() {
+            let confirmation = confirm("Are you sure you want to send your watch info to your doctor?");
+            if (confirmation) {
+                // Show success message
+                document.getElementById("message").textContent = "Your watch info has been sent to your doctor.";
+                document.getElementById("message").style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body class="bg-purple-700 flex items-center justify-center min-h-screen">
     <div class="text-center text-white p-8 rounded-lg shadow-lg bg-purple-800">
@@ -53,6 +63,19 @@
                 </div>
             </div>
         </div>
+
+        <!-- Send Watch Info Button -->
+        <div class="mt-8">
+            <button onclick="sendWatchInfo()" class="bg-blue-500 text-white font-bold py-2 px-6 rounded-full flex items-center justify-center mx-auto hover:bg-blue-600 transition duration-300">
+                <i class="fas fa-clock mr-2"></i>
+                Send Watch Info
+            </button>
+        </div>
+
+        <!-- Success Message (Hidden by Default) -->
+        <p id="message" class="text-green-500 mt-4" style="display: none;"></p>
+
+        <!-- Log Out Button -->
         <div class="mt-8">
             <a href="index.html">
                 <button class="bg-gray-300 text-purple-700 font-bold py-2 px-6 rounded-full flex items-center justify-center mx-auto hover:bg-gray-400 transition duration-300">
