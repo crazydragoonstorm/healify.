@@ -8,6 +8,65 @@
         body {
             font-family: 'Roboto', sans-serif;
         }
+
+        /* Floating Button */
+        .floating-button {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background-color: #ff4081;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 50;
+            transition: background-color 0.3s ease;
+        }
+
+        .floating-button:hover {
+            background-color: #e91e63;
+        }
+
+        .floating-button i {
+            font-size: 28px;
+            color: white;
+        }
+
+        /* Bottom Nav */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 40;
+        }
+
+        .bottom-nav a {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .bottom-nav i {
+            font-size: 24px;
+            color: gray;
+            transition: color 0.3s ease;
+        }
+
+        .bottom-nav a i:hover {
+            color: blue;
+        }
+
+        .bottom-nav a.active i {
+            color: blue;
+        }
     </style>
 </head>
 <body class="bg-gradient-to-b from-blue-500 to-purple-500 text-white">
@@ -66,6 +125,7 @@
             <div class="mt-6">
                 <div class="text-lg font-bold">Top doctors</div>
                 <div class="mt-4">
+                    <!-- Doctor Profiles -->
                     <div class="flex items-center p-4 bg-gray-100 rounded-lg mb-4">
                         <img alt="Doctor Olivia Wilson" class="rounded-full w-12 h-12" height="50" src="https://storage.googleapis.com/a1aa/image/noBFpfnXDKwlZaYfGUQNWvMf8cl6eSEwxx510tiavQgzOcUOB.jpg" width="50"/>
                         <div class="ml-4">
@@ -74,7 +134,7 @@
                             <div class="text-sm text-yellow-500"><i class="fas fa-star"></i> 4.9 (57 Reviews)</div>
                         </div>
                     </div>
-                    <div class="flex items-center p-4 bg-gray-100 rounded-lg">
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg mb-4">
                         <img alt="Doctor Jonathan Patterson" class="rounded-full w-12 h-12" height="50" src="https://storage.googleapis.com/a1aa/image/kXIJu5pLYw6OPx7JFThRvUJgYPk1ije269olwDvdytv1hjyJA.jpg" width="50"/>
                         <div class="ml-4">
                             <div class="font-bold">dr. Jonathan Patterson</div>
@@ -82,31 +142,64 @@
                             <div class="text-sm text-yellow-500"><i class="fas fa-star"></i> 4.9 (57 Reviews)</div>
                         </div>
                     </div>
+                    <!-- Additional Doctor Profiles to Fit the Page -->
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg mb-4">
+                        <img alt="Doctor Sophia Carter" class="rounded-full w-12 h-12" height="50" src="https://storage.googleapis.com/a1aa/image/SophiaDoctor.jpg" width="50"/>
+                        <div class="ml-4">
+                            <div class="font-bold">dr. Sophia Carter</div>
+                            <div class="text-sm text-gray-600">Consultant - Cardiology</div>
+                            <div class="text-sm text-yellow-500"><i class="fas fa-star"></i> 4.8 (47 Reviews)</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg mb-4">
+                        <img alt="Doctor William Taylor" class="rounded-full w-12 h-12" height="50" src="https://storage.googleapis.com/a1aa/image/WilliamDoctor.jpg" width="50"/>
+                        <div class="ml-4">
+                            <div class="font-bold">dr. William Taylor</div>
+                            <div class="text-sm text-gray-600">Consultant - Neurology</div>
+                            <div class="text-sm text-yellow-500"><i class="fas fa-star"></i> 4.7 (39 Reviews)</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg mb-4">
+                        <img alt="Doctor Emily Scott" class="rounded-full w-12 h-12" height="50" src="https://storage.googleapis.com/a1aa/image/EmilyDoctor.jpg" width="50"/>
+                        <div class="ml-4">
+                            <div class="font-bold">dr. Emily Scott</div>
+                            <div class="text-sm text-gray-600">Consultant - Pediatrics</div>
+                            <div class="text-sm text-yellow-500"><i class="fas fa-star"></i> 4.9 (53 Reviews)</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg mb-4">
+                        <img alt="Doctor Michael Brown" class="rounded-full w-12 h-12" height="50" src="https://storage.googleapis.com/a1aa/image/MichaelDoctor.jpg" width="50"/>
+                        <div class="ml-4">
+                            <div class="font-bold">dr. Michael Brown</div>
+                            <div class="text-sm text-gray-600">Consultant - Dermatology</div>
+                            <div class="text-sm text-yellow-500"><i class="fas fa-star"></i> 4.8 (45 Reviews)</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-gray-100 rounded-lg mb-4">
+                        <img alt="Doctor Sarah Johnson" class="rounded-full w-12 h-12" height="50" src="https://storage.googleapis.com/a1aa/image/SarahDoctor.jpg" width="50"/>
+                        <div class="ml-4">
+                            <div class="font-bold">dr. Sarah Johnson</div>
+                            <div class="text-sm text-gray-600">Consultant - Orthopedics</div>
+                            <div class="text-sm text-yellow-500"><i class="fas fa-star"></i> 4.7 (49 Reviews)</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="fixed bottom-0 w-full bg-blue-600 p-4 flex justify-around text-white">
-            <a href="1.html" class="flex flex-col items-center">
-                <i class="fas fa-home text-xl"></i>
-                <div class="text-xs">Home</div>
-            </a>
-            <a href="doc.html" class="flex flex-col items-center">
-                <i class="fas fa-user-md text-xl"></i>
-                <div class="text-xs">Doctors</div>
-            </a>
-            <a href="appointment.html" class="flex flex-col items-center">
-                <i class="fas fa-calendar-alt text-xl"></i>
-                <div class="text-xs">Appointment</div>
-            </a>
-            <a href="shop.html" class="flex flex-col items-center">
-                <i class="fas fa-shopping-cart text-xl"></i>
-                <div class="text-xs">Shop</div>
-            </a>
-            <a href="profile.html" class="flex flex-col items-center">
-                <i class="fas fa-user text-xl"></i>
-                <div class="text-xs">Profile</div>
-            </a>
+
+        <!-- Bottom Nav (Fixed) -->
+        <div class="bottom-nav">
+            <a href="1.html" class="active"><i class="fas fa-home"></i></a>
+            <a href="doc.html"><i class="fas fa-user-md"></i></a>
+            <a href="appointment.html"><i class="fas fa-calendar-alt"></i></a>
+            <a href="shop.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="profile.html"><i class="fas fa-user-circle"></i></a>
         </div>
+
+        <!-- Floating Button -->
+        <a href="ai.html" class="floating-button">
+            <i class="fas fa-robot"></i>
+        </a>
     </div>
 </body>
 </html>
